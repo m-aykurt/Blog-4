@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    background-color: rgb(214, 223, 226);
+    line-height: 1.5;
+
+
+}
+
+p{
+    color: gray;   
+}
+
+#container{
+    padding: 2rem;
+    box-shadow: 0 0 2px gainsboro;
+    width: 100%;
+    align-items: stretch;
+    display: flex;
+
+}
+
+
+/* responsive */
+
+@media screen and (max-width:800px) {
+    #container{
+        flex-direction: column;
+        align-items:center;
+        text-align: center;
+        
+        
+    }
+    #left-side{
+        min-width: 100%;
+
+    }
+
+    #main{
+        margin-top: 2rem;
+        min-width: 100%;
+        flex-direction: column;
+        align-items:center;
+    }
+    .main-title{
+        min-width: 100%;
+    }
+    .main-title p{
+        width: 100%;
+        text-align: justify;
+        margin-left:5rem ;
+
+    }
+    .box-container{
+        min-width: 100%;
+
+    }
+    .right-side{
+        margin-top: 3rem;
+        min-width: 100%;
+
+    }
+    #footer{
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+
+    }
+
+    
+    .links{
+        min-width: 100%;
+    }
+
+    .contact{
+        min-width: 100%;
+        
+    }
+    .map{
+        min-width: 100%;
+    }
+    .mapouter{
+        margin-left: 6rem;
+    }
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+    font-weight: bold;
+
+}
+h2{
+    font-weight: 300;
+    text-transform: capitalize;
+}
+img{
+    width: 70%;
+    
+}
+i{
+    color: rgb(58, 57, 57);
+
+}
+
+
+
+
+/* left side  */
+
+
+#left-side{
+
+    width: 25%;
+    padding-left: 2rem;
+    float: left;
+    background-color: #F0F4F7;
+}
+
+.logo p{
+    width: 90%;
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+
+.logo ,.list ,#copyright{
+    padding-bottom: 2rem;
+}
+#left-side ul li{
+    padding-bottom: 2rem;
+}
+
+.logo img{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+
+
+
+/* main */
+
+#main{
+    width: 75%;
+    float: left;
+    background-color: #FFFFFF;
+    padding: 2rem;
+}
+.main-title p{
+    padding-right: 10rem;
+    padding-bottom:4rem ;
+    padding-top: 1.5rem;
+}
+
+.box-container{
+    width: 70%;
+}
+.right-side{
+    width: 30%;
+}
+
+.box-title h2{
+    padding-bottom:1rem ;
+}
+
+.date i{
+    padding-right: 1rem;
+}
+.box-main img{
+    width: 90%;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.box-main img:hover{
+    opacity: 0.8;
+}
+
+.box-main p{
+    width: 92%;
+    padding-bottom: 2rem;
+}
+.read-more-bt{
+    padding-bottom:1rem ;
+}
+
+.post{
+    padding: 0.8rem;
+    display: inline-block;
+    color: rgb(23, 172, 172);
+    border: 1px solid rgb(23, 172, 172);
+    background-color: white;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.post:hover{
+    color: white;
+    background-color: rgb(107, 231, 231);
+    cursor: pointer;
+}
+
+.slide{
+    padding-top:1rem ;
+}
+.sl-box{
+    padding: 1rem;
+    border: 1px solid gainsboro ;
+    border-radius: 4px;
+    color:gray;
+    transition: all 0.3s;
+}
+
+.sl-box:hover{
+    background-color: gray;
+    color: white;
+}
+/* --right-side */
+
+.right-side{
+    float: right;
+    width: 25%;
+}
+
+hr{
+    width: 100%;
+    color: gainsboro;
+    opacity: 0.5;
+    display: inline-block;
+    height: 1px;
+}
+
+
+.about img{
+    border-radius: 50%;
+    position: relative;
+    left: 2rem;
+
+}
+
+.about p{
+    text-align: center;
+    padding: 1rem 0;
+    padding-bottom: 2rem;
+}
+
+
+.search-box{
+    padding-bottom: 2rem;
+}
+.search-box input{
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 1rem 1.2rem;
+    font-size: 0.9rem;
+    border: 1px solid gainsboro;
+    outline: none;
+    transition: all 0.3s;
+
+
+}
+
+.search-box input:hover{
+    outline: none;
+
+
+}
+
+
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    padding-bottom: 2rem;
+}
+
+.social a{
+    width: 25%;
+    font-size: 2rem;
+}
+
+.categories{
+    padding-bottom: 2rem;
+
+}
+.categories a, .archives a{
+    width: 100%;
+    display: block;
+    font-weight: lighter;
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+}
+
+.popular-posts{
+    display: block;
+    
+}
+.post-box{
+    width: 100%;
+    padding-bottom: 2rem;
+}
+.post-box:last-child{
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.post-box img{
+    float: left;
+    width: 25%;
+}
+
+.post-box p{
+    float: right;
+    width: 75%;
+    padding-left: 0.5rem;
+}
+
+.text-widget{
+    font-size: 0.9rem; 
+    padding-bottom: 2rem;  
+}
+
+.text-widget h2{
+    padding-bottom: 1rem;
+}
+
+.text-widget p{
+    padding-bottom:4rem;   
+    text-align: justify;
+    color: rgb(156, 151, 151);
+    
+}
+
+.tags span{
+    padding: 0.1rem 0.2rem;
+    display: inline-block;
+    color: rgb(250, 250, 250);
+    background-color: rgb(181, 184, 184);
+    transition: all 0.3s;
+    border-radius: 4px;
+    margin: 0.2rem;
+    font-size: 0.8rem;
+}
+
+.tags span:hover{
+    color: rgb(116, 122, 122);
+    background-color: rgb(250, 250, 250);
+    cursor: pointer;
+}
+
+/* box-container */
+
+.box-container{
+    width:75%;
+    float: left;
+}
+
+
+#footer{
+    box-shadow: 0 0 2px gainsboro;
+    width: 95%;
+    align-items:flex-start ;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F0F4F7;
+    margin:0 2rem 2rem 2rem;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.links a{
+    display: block;
+    padding: 0.5rem 0;
+    color: rgb(58, 57, 57);
+}
+.links h2,.contact h2,.map h2{
+    padding-bottom: 1.5rem;
+}
+
